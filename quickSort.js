@@ -3,6 +3,7 @@
 class QuickSort {
   // 交换
   static swap(arr, i, j) {
+    console.log('swap(arr, i, j)', arr, i, j);
     const temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
@@ -68,4 +69,5 @@ class QuickSort {
 console.log('-----1');
 const list = [2,6,3,8,4,6,1,5,2,9,4,7,5];
 QuickSort.quickSort(list);
+console.log('-----end');
 console.log(list);
